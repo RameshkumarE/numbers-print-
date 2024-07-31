@@ -1,2 +1,11 @@
-# numbers-print-
-give any numbers and that print in reverse and only even numbers
+#!/bin/bash
+echo "Enter any number:"
+read abc
+for ((i=1; i<=$abc; i++))
+do
+        if [ $(($i %2)) -eq 0 ]
+        then
+                echo "$i"
+        fi
+
+done
