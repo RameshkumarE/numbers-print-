@@ -1,0 +1,50 @@
+Task 1:
+
+#!/bin/bash
+echo "Enter the file name:"
+cd /home/ubuntu
+read file
+if [ -f $file ]
+then
+        echo "File exist"
+else
+        echo "File does not exist"
+fi
+
+Task 2:
+
+#!/bin/bash
+cd /home/ubuntu/testing
+file=`ls *.txt`
+for qwer in $file
+do
+        echo "$file"
+done
+Task 3:
+
+#!/bin/bash
+echo "Enter any numbers:"
+read num
+if [ $num -lt 10 ]
+then
+        echo "$num is not greater than 10"
+elif [ $num -gt 10 ]
+then
+       echo "$num is greater than 10"   
+else
+echo "$num is equal to 10"
+fi
+
+Task 4:
+
+#!/bin/bash
+echo "Enter any number:"
+read abc
+for ((i=1; i<=$abc; i++))
+do
+        if [ $(($i %2)) -eq 0 ]
+        then
+                echo "$i"
+        fi
+
+done
